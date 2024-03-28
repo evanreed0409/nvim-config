@@ -16,9 +16,6 @@ return require('packer').startup(function(use)
     {
     'catppuccin/nvim',
     as = 'catppuccin',
-    config = function()
-      vim.cmd('colorscheme catppuccin')
-    end
   },
   -- gruvbox
   {
@@ -27,8 +24,8 @@ return require('packer').startup(function(use)
   },
   -- nyoom
   {
-    'nyoom-engineering/nyoom.nvim',
-    as = 'nyoom'
+    'nyoom-engineering/oxocarbon.nvim',
+    as = 'oxocarbon'
   },
   -- kanagawa
   {

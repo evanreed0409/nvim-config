@@ -35,7 +35,7 @@ require("themery").setup({
     },
     {
       name = "nyoom",
-      colorscheme = "catppuccin",
+      colorscheme = "nyoom",
       before = [[
       -- All this block will be executed before apply "set colorscheme"
       vim.opt.background = "dark"
