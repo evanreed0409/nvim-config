@@ -34,8 +34,8 @@ require("themery").setup({
       ]],
     },
     {
-      name = "nyoom",
-      colorscheme = "nyoom",
+      name = "oxocarbon",
+      colorscheme = "oxocarbon",
       before = [[
       -- All this block will be executed before apply "set colorscheme"
       vim.opt.background = "dark"
@@ -43,3 +43,8 @@ require("themery").setup({
     },
   }
 })
+-- Themery block
+-- This block will be replaced by Themery.
+vim.cmd("colorscheme oxocarbon")
+vim.g.theme_id = 5
+-- end themery block
