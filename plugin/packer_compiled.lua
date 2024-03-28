@@ -100,6 +100,11 @@ _G.packer_plugins = {
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  kanagawa = {
+    loaded = true,
+    path = "/home/evan/.local/share/nvim/site/pack/packer/start/kanagawa",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  nyoom = {
+    loaded = true,
+    path = "/home/evan/.local/share/nvim/site/pack/packer/start/nyoom",
+    url = "https://github.com/nyoom-engineering/nyoom.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -134,6 +144,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/themery.nvim",
     url = "https://github.com/zaldih/themery.nvim"
+  },
+  tokyonight = {
+    loaded = true,
+    path = "/home/evan/.local/share/nvim/site/pack/packer/start/tokyonight",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,

@@ -12,16 +12,36 @@ return require('packer').startup(function(use)
   
   -- themes
   use({
+    -- catppuccin
+    {
     'catppuccin/nvim',
     as = 'catppuccin',
     config = function()
       vim.cmd('colorscheme catppuccin')
     end
-  })
-  use({
+  },
+  -- gruvbox
+  {
     'ellisonleao/gruvbox.nvim',
     as = 'gruvbox'
+  },
+  -- nyoom
+  {
+    'nyoom-engineering/nyoom.nvim',
+    as = 'nyoom'
+  },
+  -- kanagawa
+  {
+    'rebelot/kanagawa.nvim',
+    as = 'kanagawa'
+  },
+  -- tokyonight
+  {
+    'folke/tokyonight.nvim',
+    as = 'tokyonight'
+  }
   })
+
 
   -- treesitter
   use {
