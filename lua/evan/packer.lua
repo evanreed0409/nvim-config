@@ -1,4 +1,4 @@
-vim.cmd [[packadd packer.nvim]]
+vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -9,38 +9,37 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  
+  -- themes
+  use({
+    'catppuccin/nvim',
+    as = 'catppuccin',
+    config = function()
+      vim.cmd('colorscheme catppuccin')
+    end
+  })
+  use({
+    'ellisonleao/gruvbox.nvim',
+    as = 'gruvbox'
+  })
 
-  use { "catppuccin/nvim",
-  as = "catppuccin",
-  config = function()
-    vim.cmd('colorscheme catppuccin')
-  end
-}
-use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-use('nvim-treesitter/playground')
-use('theprimeagen/harpoon')
-use('mbbill/undotree')
-use {'neoclide/coc.nvim', branch = 'release'}
--- use {
---  'VonHeikemen/lsp-zero.nvim',
---  branch = 'v1.x',
---  requires = {
-    -- LSP Support
---    {'neovim/nvim-lspconfig'},
---    {'williamboman/mason.nvim'},
---    {'williamboman/mason-lspconfig.nvim'},
+  -- treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
+  use("nvim-treesitter/playground")
+  use("nvim-treesitter/nvim-treesitter-context")
 
-    -- Autocompletion
---    {'hrsh7th/nvim-cmp'},
---    {'hrsh7th/cmp-buffer'},
---    {'hrsh7th/cmp-path'},
---    {'saadparwaiz1/cmp_luasnip'},
---    {'hrsh7th/cmp-nvim-lsp'},
---    {'hrsh7th/cmp-nvim-lua'},
+  -- finding files
+  use("theprimeagen/harpoon")
+  use("mbbill/undotree")
 
-    -- Snippets
---    {'L3MON4D3/LuaSnip'},
---    {'rafamadriz/friendly-snippets'},
---  }
---}
+  -- other plugins
+  use('freddiehaddad/feline.nvim')
+  use{'neoclide/coc.nvim', branch = 'release'}
+  use('zaldih/themery.nvim')
 end)
