@@ -59,4 +59,13 @@ return require('packer').startup(function(use)
   use('freddiehaddad/feline.nvim')
   use{'neoclide/coc.nvim', branch = 'release'}
   use('zaldih/themery.nvim')
+  use{
+    'sudormrfbin/cheatsheet.nvim',
+
+    requries = {
+      {'nvim-telescope/telescope.nvim'},
+      {'nvim-lua/popup.nvim'},
+      {'nvim-lua/plenary.nvim'}
+    }
+  }
 end)
