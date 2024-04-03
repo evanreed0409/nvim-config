@@ -45,8 +45,8 @@ require("themery").setup({
 })
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme kanagawa")
-vim.g.theme_id = 4
+vim.cmd("colorscheme tokyonight")
+vim.g.theme_id = 3
 -- end themery block
 function ColorMyPencils()
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
