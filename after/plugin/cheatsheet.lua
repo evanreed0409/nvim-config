@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>sh", ":Cheatsheet!<cr>")
+vim.keymap.set("n", "<leader>ch", ":Cheatsheet!<cr>")
 require("cheatsheet").setup({
     -- Whether to show bundled cheatsheets
 
