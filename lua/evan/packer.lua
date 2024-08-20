@@ -58,7 +58,7 @@ return require('packer').startup(function(use)
   -- other plugins
   use('tpope/vim-fugitive')
   use('freddiehaddad/feline.nvim')
-  use{'neoclide/coc.nvim', branch = 'release'}
+  --  use{'neoclide/coc.nvim', branch = 'release'}
   use('zaldih/themery.nvim')
   use{
     'sudormrfbin/cheatsheet.nvim',
